@@ -1,6 +1,6 @@
 var utils = (function() {
     function loadModel(id, data) {
-        $('#' + id).gk('model', data[id]);
+        $('#' + id).gk('model', data);
     }
 
     function refreshOpts(id, data) {
