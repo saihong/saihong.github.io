@@ -1,0 +1,15 @@
+[
+{
+text:'休假',
+value:'V'
+},
+{
+text:'病假',
+value:'D'
+},
+{
+text:'事假',
+value:'E'
+} 
+
+]
