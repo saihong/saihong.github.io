@@ -1,0 +1,85 @@
+<!DOCTYPE html> 
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>App安裝</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0"> 
+    <style type="text/css"></style><script type="text/javascript">
+    var link={
+    	ios:{
+    		prod:"itms-services://?action=download-manifest&url=https://ezoui.com/html/RizhaoqsProd.plist",
+    		test:"itms-services://?action=download-manifest&url=https://ezoui.com/html/RizhaoqsTest.plist" 
+    	},
+    	android:{
+    		prod:"http://mas.csc.com.tw:8080/erp/public/app/android/EZoApp.apk",
+    		test:"http://mas.csc.com.tw:8080/erp/public/app/android/EZoAppTest.apk" ,
+            book:"http://mas.csc.com.tw:8080/erp/public/app/android/EZoDM.apk" 
+    	}
+    } ;
+
+    var link = (function() {
+
+        if (/\smac\sos/i.test(navigator.userAgent)) {
+            return link.ios ;
+        } else if (/android/i.test(navigator.userAgent)) {
+            return link.android ;
+        } else {
+            alert('Not supported:' + navigator.userAgent);
+            return undefined ;
+        } 
+    })();
+
+    </script>    
+</head>
+
+<body>
+<center>
+    <table>
+        <tbody><tr>
+            <td align="center">
+                <a id="prodimg" href="http://mas.csc.com.tw:8080/erp/html/dem/demhAppStore.html#">
+                    <img src="./csc-prod.png" width="100" height="100">
+                </a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <a id="prodlink" href="http://mas.csc.com.tw:8080/erp/html/dem/demhAppStore.html#">正式機</a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                &nbsp;
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+            	<a id="testimg" href="http://mas.csc.com.tw:8080/erp/html/dem/demhAppStore.html#"><img src="./csc-test.png"  width="100" height="100"></a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                <a id="testlink" href="http://mas.csc.com.tw:8080/erp/html/dem/demhAppStore.html#">測試機</a>
+            </td>
+        </tr>
+        <tr>
+            <td align="center">
+                &nbsp;
+            </td>
+        </tr>         
+
+    </tbody></table>
+ </center>
+ <script type="text/javascript">
+    document.querySelector('#prodimg').setAttribute('href', link.prod) ;
+    document.querySelector('#prodlink').setAttribute('href', link.prod) ;
+    document.querySelector('#testimg').setAttribute('href', link.test) ;
+    document.querySelector('#testlink').setAttribute('href', link.test) ;
+
+    document.querySelector('#booklink').setAttribute('href', link.book) ;
+    document.querySelector('#bookimg').setAttribute('href', link.book) ;
+	 
+ </script>
+
+
+
+</body></html>
