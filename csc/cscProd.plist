@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>assets</key>
+			<array>
+				<dict>
+					<key>kind</key>
+					<string>software-package</string>
+					<key>url</key>
+					<string>https://dl.dropboxusercontent.com/s/ysr5fcy06h2mvx9/rizhaoqs_prod.ipa</string>
+				</dict>
+				<dict>
+					<key>kind</key>
+					<string>display-image</string>
+
+					<key>url</key> 
+					<string>http://a4.mzstatic.com/us/r1000/068/Purple/v4/1d/56/31/1d5631e8-5148-5dca-eecb-97cbb54cddf9/icon57x57.png</string>
+				</dict>
+
+						<!-- full-size-image: the large 512×512 icon used by iTunes. -->
+				<dict>
+					<key>kind</key>
+					<string>full-size-image</string>
+
+					<key>url</key>
+					<string>http://vterrain.org/Water/water512.jpg</string>
+				</dict>
+
+			</array>
+			<key>metadata</key>
+			<dict>
+				<key>bundle-identifier</key>
+				<string>com.baosight.chinasalt.rsteel.moa.RizhaoqsProd</string>
+				<key>bundle-version</key>
+				<string>0.0.1</string>
+				<key>kind</key>
+				<string>software</string>
+				<key>title</key>
+				<string>日照移動商務-正式版</string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
